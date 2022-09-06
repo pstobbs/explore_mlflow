@@ -1,0 +1,41 @@
+artifact_path: train/estimator
+flavors:
+  python_function:
+    code: code
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.9.13
+  sklearn:
+    code: code
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.1.2
+mlflow_version: 1.28.0
+model_uuid: 0a6382aacf874b28a43c3c4e0e3d9dba
+run_id: ed742d4c0d454512b00428b8fa0962bc
+signature:
+  inputs: '[{"name": "hour_encoder__pickup_hour_0", "type": "double"}, {"name": "hour_encoder__pickup_hour_1",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_2", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_3", "type": "double"}, {"name": "hour_encoder__pickup_hour_4",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_5", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_6", "type": "double"}, {"name": "hour_encoder__pickup_hour_7",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_8", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_9", "type": "double"}, {"name": "hour_encoder__pickup_hour_10",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_11", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_12", "type": "double"}, {"name": "hour_encoder__pickup_hour_13",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_14", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_15", "type": "double"}, {"name": "hour_encoder__pickup_hour_16",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_17", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_18", "type": "double"}, {"name": "hour_encoder__pickup_hour_19",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_20", "type": "double"},
+    {"name": "hour_encoder__pickup_hour_21", "type": "double"}, {"name": "hour_encoder__pickup_hour_22",
+    "type": "double"}, {"name": "hour_encoder__pickup_hour_23", "type": "double"},
+    {"name": "day_encoder__pickup_dow_0", "type": "double"}, {"name": "day_encoder__pickup_dow_1",
+    "type": "double"}, {"name": "day_encoder__pickup_dow_2", "type": "double"}, {"name":
+    "day_encoder__pickup_dow_3", "type": "double"}, {"name": "day_encoder__pickup_dow_4",
+    "type": "double"}, {"name": "day_encoder__pickup_dow_5", "type": "double"}, {"name":
+    "day_encoder__pickup_dow_6", "type": "double"}, {"name": "std_scaler__trip_distance",
+    "type": "double"}, {"name": "std_scaler__trip_duration", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-09-06 12:56:49.119242'
